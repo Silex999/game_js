@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff;
+}
+
+#gameArea {
+    width: 400px;
+    height: 600px;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    background-color: #d1e7dd;
+}
+
+#basket {
+    width: 80px;
+    height: 20px;
+    background-color: #ffb900;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#egg {
+    width: 30px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: Math.random() * (400 - 30) + 'px';
+}
