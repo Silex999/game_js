@@ -37,10 +37,14 @@ function checkCatch() {
         eggRect.left <= basketRect.left + basketRect.width
     ) {
         eggCaught++;
-        alert(`Вы поймали яйцо! Всего поймано: ${eggCaught}`);
+        updateCounter()
         clearInterval(eggFallInterval);
         spawnEgg();
     }
+}
+
+function updateCounter() {
+	counter.textContent = `Всего поймано: ${eggCaught}`;
 }
 
 document.addEventListener('keydown', (e) => {
